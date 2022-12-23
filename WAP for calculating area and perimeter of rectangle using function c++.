@@ -1,0 +1,20 @@
+// WAP for calculating area and perimeter of rectangle using c++ function.
+#include<iostream>
+using namespace std;
+int area(int,int);
+int perimeter(int,int);
+int main()
+{
+	cout<<"Area="<<area(2,3);
+	cout<<"\n perimeter="<<perimeter(6,7);
+	return 0;
+	
+}
+int area(int l, int b){
+
+return (l*b);
+}
+int perimeter(int l, int b){
+
+return (2*(l+b));
+}
