@@ -1,0 +1,31 @@
+//Write a concept of justifying concept of function overloading using class
+
+#include<iostream>
+using namespace std;
+int mul(int, int);
+int mul(double , double);
+class multiplication
+{
+	int a,b;
+	
+	public:
+		int mul(int a, int b)
+		{
+		
+			
+		int	mul=a*b;
+			cout<<"Multiplication="<<mul;
+		}
+		int mul(double a, double b)
+		{
+			int mul=a*b;
+			cout<<"\nMultiplication="<<mul;
+		}
+};
+int main()
+{
+	multiplication m1,m2;
+	m1.mul(2,3);
+	m2.mul(3.5,4.5);
+	return 0;
+}
