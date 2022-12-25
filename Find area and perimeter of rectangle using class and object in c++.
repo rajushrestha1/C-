@@ -1,0 +1,32 @@
+
+//WAP to find area and perimeter of rectangle using class.
+
+#include <iostream>
+using namespace std;
+class Rectangle{
+    private:
+        int l, b;
+    public:
+        void area(int len, int bre){
+            l = len;
+            b = bre;
+        }
+        int area(){
+            return l * b;
+        }
+        void perimeter(int len, int bre){
+            l = len;
+            b = bre;
+        }
+        int perimeter()
+        {
+        	return 2*(l+b);
+		}
+};
+int main(){
+    Rectangle r1, r2;
+    r1.area(10, 9);
+    r2.perimeter(8, 6);
+    cout << "Area of r1: " << r1.area() << endl;
+    cout << "perimeter of r2: " << r2.perimeter() << endl;
+}
